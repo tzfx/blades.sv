@@ -1,0 +1,19 @@
+whisper:
+    name: whisper
+    desc: an arcane adept and channeler
+    friends:
+        - Nyryx, a possessor ghost
+        - Scurlock, a vampire
+        - Setarra, a demon
+        - Quellyn, a witch
+        - Flint, a spirit trafficker
+    items:
+        - Fine lightning hook 2
+        - Fine spirit mask
+        - Electroplasm vials
+        - Spirit bottles (2)
+        - Ghost key
+        - Demonbane charm
+    actions:
+        study: 1
+        attune: 2

@@ -1,0 +1,19 @@
+slide:
+    name: slide
+    desc: a subtle manipulator and spy
+    friends:
+        - Bryl, a drug dealer
+        - Bazso Baz, a gang leader
+        - Klyra, a tavern owner
+        - Nyryx, a prostitute
+        - Harker, a jail-bird
+    items:
+        - Fine clothes & jewelry
+        - Fine disguise kit
+        - Fine loaded dice, trick cards
+        - Trance powder
+        - A cane-sword
+        - Spiritbane charm
+    actions:
+        consort: 1
+        sway: 2

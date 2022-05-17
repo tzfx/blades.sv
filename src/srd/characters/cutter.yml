@@ -1,0 +1,19 @@
+cutter:
+    name: Cutter
+    desc: A dangerous & intimidating fighter
+    friends:
+        - Marlane, a pugilist
+        - Chael, a vicious thug
+        - Mercy, a cold killer
+        - Grace, an extortionist
+        - Sawtooth, a physicker
+    items:
+        - Fine hand weapon
+        - Fine heavy weapon 2
+        - Scary weapon or tool
+        - Manacles & chain
+        - Rage essence vial
+        - Spiritbane charm
+    actions:
+        skirmish: 2
+        command: 1

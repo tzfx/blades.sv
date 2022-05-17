@@ -1,0 +1,8 @@
+xp:
+    name: xp
+    desperation: Every time you roll a desperate action, mark xp in that action's attribute.
+    end: At the end of each session, for each item below, mark 1 xp (in your playbook or an attribute) or 2 xp if that item occurred multiple times.
+    options:
+        - You addressed a challenge with stealth or evasion.
+        - You expressed your beliefs, drives, heritage, or background.
+        - You struggled with issues from your vice or traumas during the session.

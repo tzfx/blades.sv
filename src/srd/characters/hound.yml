@@ -1,0 +1,19 @@
+hound:
+    name: hound
+    desc: a deadly sharpshooter and tracker
+    friends:
+        - Steiner, an assassin
+        - Celene, a sentinel
+        - Melvir, a physicker
+        - Veleris, a spy
+        - Casta, a bounty hunter
+    items:
+        - Fine pair of pistols
+        - Fine long rifle 2
+        - Electroplasmic ammunition
+        - A trained hunting pet
+        - Spyglass
+        - Spiritbane charm
+    actions:
+        hunt: 2
+        survey: 1

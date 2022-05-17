@@ -1,0 +1,10 @@
+gather:
+    name: Gather Information
+    questions:
+        - What is arcane or weird here?
+        - What echoes in the ghost field?
+        - What is hidden or lost here?
+        - What do they intend to do?
+        - What drives them to do this?
+        - How can I reveal [X]?
+        - What's really going on here?

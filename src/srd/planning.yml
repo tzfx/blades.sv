@@ -1,0 +1,16 @@
+planning:
+    name: planning & load
+    desc: Choose a plan, provide the **detail**. Choose your **load** limit for the operation.
+    plans:
+        - plan: assault
+          detail: point of attack
+        - plan: deception
+          detail: method
+        - plan: stealth
+          detail: entry point
+        - plan: occult
+          detail: arcane power
+        - plan: social
+          detail: connection
+        - plan: transport
+          detail: route

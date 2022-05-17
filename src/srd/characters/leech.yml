@@ -1,0 +1,19 @@
+leech:
+    name: leech
+    desc: a saboteur and technician
+    items:
+        - Fine tinkering tools
+        - Fine wrecking tools 2
+        - Blowgun & darts, syringes
+        - Bandolier (3 uses)
+        - Bandolier (3 uses)
+        - Gadgets 3
+    friends:
+        - Stazia, an apothecary
+        - Veldren, a psychonaut
+        - Eckerd, a corpse thief
+        - Jul, a blood dealer
+        - Malista, a priestess
+    actions:
+        tinker: 2
+        wreck: 1

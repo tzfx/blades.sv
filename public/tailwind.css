@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[type="text"] {
+    @apply w-11/12;
+    @apply mt-0;
+    @apply block;
+    @apply px-0.5;
+    @apply border-0;
+    @apply border-b-2;
+    @apply border-gray-300;
+}
+
+[type="text"]:focus {
+    @apply ring-0;
+    @apply border-black;
+}

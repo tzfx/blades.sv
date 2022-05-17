@@ -1,0 +1,19 @@
+lurk:
+    name: lurk
+    desc: A stealthy infiltrator and burglar
+    friends:
+        - Telda, a beggar
+        - Darmot, a bluecoat
+        - Frake, a locksmith
+        - Roslyn Kellis, a noble
+        - Petra, a city clerk
+    items:
+        - Fine lockpicks
+        - Fine shadow cloak
+        - Light climbing gear
+        - Silence potion vial
+        - Dark-sight goggles
+        - Spiritbane charm
+    actions:
+        finesse: 1
+        prowl: 2

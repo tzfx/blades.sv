@@ -1,0 +1,19 @@
+spider:
+    name: spider
+    desc: a devious mastermind
+    friends:
+        - Salia, an information broker
+        - Augus, a master architect
+        - Jennah, a servant
+        - Riven, a chemist
+        - Jeren, a bluecoat archivist
+    items:
+        - Fine cover identity
+        - Fine bottle of whiskey
+        - Blueprints
+        - Vial of slumber essence
+        - Concealed palm pistol
+        - Spiritbane charm
+    actions:
+        study: 1
+        consort: 2

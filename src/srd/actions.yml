@@ -1,0 +1,16 @@
+actions:
+    insight:
+        - hunt
+        - study
+        - survey
+        - tinker
+    prowess:
+        - finesse
+        - prowl
+        - skirmish
+        - wreck
+    resolve:
+        - attune
+        - command
+        - consort
+        - sway
