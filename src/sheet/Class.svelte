@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let classname: string;
+    export let classname: string = "lurk";
 
     import sd from "snarkdown";
     import type { Character } from "../srd/characters/Character";
@@ -22,6 +22,10 @@
     import { whisper } from "../srd/characters/whisper.yml";
     // @ts-ignore
     import { xp } from "../srd/xp.yml";
+    // @ts-ignore
+    import { teamwork } from "../srd/teamwork.yml";
+    // @ts-ignore
+    import { planning } from "../srd/planning.yml";
     const classes: Character[] = [
         cutter,
         hound,
@@ -31,8 +35,13 @@
         spider,
         whisper,
     ];
-    const selected = classes.find((c) => c.name === classname) ?? classes[0];
-    const specials = [...abilities[selected.name], ...abilities["all"]];
+    let selected;
+    let specials;
+    select();
+    function select() {
+        selected = classes.find((c) => c.name === classname) ?? classes[0];
+        specials = [...abilities[selected.name], ...abilities["all"]];
+    }
 </script>
 
 <div class="col-span-2 bg-gray-200 h-screen text-xs">
@@ -89,22 +98,52 @@
             {/each}
         </div>
     </div>
-    <div>
+    <div class="pb-2">
         <p class="bg-gray-300 w-full uppercase pl-3">
             <strong>XP</strong>
         </p>
-        <ul>
-            <li><em>{xp.desperation}</em></li>
-        </ul>
-        <span>{xp.end}</span>
-        <ul>
-            {#each xp.options as o}
-                <li><em>{o}</em></li>
-            {/each}
-        </ul>
+        <div class="pr-3 w-full pt-2">
+            <ul class="list-disc pl-5">
+                <li><em>{xp.desperation}</em></li>
+            </ul>
+            <span class="pl-3">{xp.end}</span>
+            <ul class="list-disc pl-5">
+                {#each xp.options as o}
+                    <li><em>{o}</em></li>
+                {/each}
+            </ul>
+        </div>
     </div>
-    <div class="grid grid-cols-2">
-        <div>teamwork</div>
-        <div>planning & load</div>
+    <div class="grid grid-cols-3 bg-white border-2 border-gray-300">
+        <div>
+            <p class="w-full uppercase text-lg pl-3 pt-1">
+                <strong>teamwork</strong>
+            </p>
+            {#each teamwork as tw}
+                <p class="bg-gray-300 m-2 pl-2">{@html sd(tw)}</p>
+            {/each}
+        </div>
+        <div class="col-span-2 w-full border-l-2">
+            <p class="w-full uppercase text-lg pt-1 pl-3">
+                <strong>{planning.name}</strong>
+            </p>
+            <p class="pl-2">{@html sd(planning.desc)}</p>
+            <div class="grid grid-cols-2">
+                <div>
+                    {#each planning.plans.slice(0, 3) as plan}
+                        <p class="bg-gray-300 m-2 pl-2">
+                            <strong>{plan.plan}</strong>:<em>{plan.detail}</em>
+                        </p>
+                    {/each}
+                </div>
+                <div>
+                    {#each planning.plans.slice(3) as plan}
+                        <p class="bg-gray-300 m-2 pl-2">
+                            <strong>{plan.plan}</strong>:<em>{plan.detail}</em>
+                        </p>
+                    {/each}
+                </div>
+            </div>
+        </div>
     </div>
 </div>

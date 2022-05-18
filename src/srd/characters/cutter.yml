@@ -1,5 +1,5 @@
 cutter:
-    name: Cutter
+    name: cutter
     desc: A dangerous & intimidating fighter
     friends:
         - Marlane, a pugilist
